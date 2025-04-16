@@ -10,10 +10,10 @@ import {
   CircularProgress,
   Divider
 } from '@mui/material';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import CommentIcon from '@mui/icons-material/Comment';
-import ShareIcon from '@mui/icons-material/Share';
+import Favorite from '@mui/icons-material/Favorite';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Comment from '@mui/icons-material/Comment';
+import Share from '@mui/icons-material/Share';
 
 const MOCK_POSTS = [
   {
@@ -114,7 +114,7 @@ const Feed = () => {
             <Grid container spacing={2} alignItems="center">
               <Grid item>
                 <IconButton onClick={() => handleLike(post.id)} color={likedPosts[post.id] ? "primary" : "default"}>
-                  {likedPosts[post.id] ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+                  {likedPosts[post.id] ? <Favorite /> : <FavoriteBorder />}
                 </IconButton>
                 <Typography variant="caption" component="span">
                   {post.likes}
@@ -122,7 +122,7 @@ const Feed = () => {
               </Grid>
               <Grid item>
                 <IconButton>
-                  <CommentIcon />
+                  <Comment />
                 </IconButton>
                 <Typography variant="caption" component="span">
                   {post.comments}
@@ -130,7 +130,7 @@ const Feed = () => {
               </Grid>
               <Grid item>
                 <IconButton>
-                  <ShareIcon />
+                  <Share />
                 </IconButton>
               </Grid>
             </Grid>
