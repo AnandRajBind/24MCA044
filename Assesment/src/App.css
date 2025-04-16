@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.nav-container {
+  margin-bottom: 2rem;
+}
+
+.page-container {
+  padding: 1rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,6 +24,19 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.user-card, .post-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feed-container {
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 @keyframes logo-spin {
